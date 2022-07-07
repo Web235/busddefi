@@ -36,7 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Source+Sans+Pro:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>BUSD Defi</title>
+    <title>BNBDEFI</title>
 </head>
 
 <body>
@@ -124,7 +124,7 @@
                                 <div style="margin-top: 5px" v-if="user.checkpoint > 0 && current_time < user.checkpoint + constants.WITHDRAW_COOLDOWN">Available in {{countdown(user.checkpoint+constants.WITHDRAW_COOLDOWN, 1)}}</div>
                             </div>
                             <div>
-                                <div>total investment</div>
+                                <div>TOTAL ROLLOVERS</div>
                                 <div busd>{{format(user.invested, 2)}}</div>
                                 <button tabindex=4 @click="overlay.history=1" id="invest">history</button>
                             </div>
@@ -207,7 +207,7 @@
                     </div>
                     <div>
                         <h2>referral program</h2>
-                        <sub>Invest atleast <u>once</u> to receive referral rewards!</sub>
+                        <sub>You must have have a mining history in order to receive referral rewards!</sub>
                         <br>
                         <sub>Without any investments, referral rewards are forfeited.</sub>
                         <br>
